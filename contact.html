@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./mean.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="header-content">
+            <div class="logo">204-Maktab</div>
+            <button id="menu-toggle" class="menu-toggle">☰</button>
+
+            <div id="overlay" class="overlay"></div>
+
+            <button id="close-btn" class="close-btn">✖</button>
+
+            <nav>
+                <ul id="nav-menu">
+                    <li><a href="./index.html">🏠 Bosh sahifa</a></li>
+                    <li><a href="./teacher.html">👩‍🏫 O'qituvchilar</a></li>
+                    <li><a href="./subject.html">📘 Fanlarimiz</a></li>
+                    <li><a href="./reapsetion.html">👨‍💼 Maktab vakillari</a></li>
+                    <li><a href="./student.html">🎓 Namunali o'quvchilar</a></li>
+                    <li><a href="./contact.html">📞 Royhatdan o'tish</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+
+    <div class="container">
+        <div class="header">
+            <h1>📚 204-Maktab</h1>
+            <p>Ro'yxatdan o'tish formasi</p>
+        </div>
+
+        <form id="registrationForm">
+            <div class="section-title">O'quvchi ma'lumotlari</div>
+
+            <div class="form-group">
+                <label for="childName">Bolaning ismi *</label>
+                <input type="text" id="childName" required placeholder="Masalan: Alisher">
+            </div>
+
+            <div class="form-group">
+                <label for="childSurname">Bolaning familiyasi *</label>
+                <input type="text" id="childSurname" required placeholder="Masalan: Ergashev">
+            </div>
+
+            <div class="form-group">
+                <label for="childAge">Bolaning yoshi *</label>
+                <input type="number" id="childAge" min="6" max="18" required placeholder="Masalan: 10">
+            </div>
+
+            <div class="section-title">Ota-ona ma'lumotlari</div>
+
+            <div class="form-group">
+                <label for="fatherName">Otasining ismi *</label>
+                <input type="text" id="fatherName" required placeholder="Masalan: Bahrom">
+            </div>
+
+            <div class="form-group">
+                <label for="fatherSurname">Otasining familiyasi *</label>
+                <input type="text" id="fatherSurname" required placeholder="Masalan: Ergashev">
+            </div>
+
+            <div class="form-group">
+                <label for="motherName">Onasining ismi *</label>
+                <input type="text" id="motherName" required placeholder="Masalan: Dilnoza">
+            </div>
+
+            <div class="form-group">
+                <label for="motherSurname">Onasining familiyasi *</label>
+                <input type="text" id="motherSurname" required placeholder="Masalan: Ergasheva">
+            </div>
+
+            <div class="section-title">Yashash joyi</div>
+
+            <div class="form-group">
+                <label for="district">Tuman *</label>
+                <select id="district" required>
+                    <option value="">Tumanni tanlang</option>
+                    <option value="Bektemir">Bektemir tumani</option>
+                    <option value="Chilonzor">Chilonzor tumani</option>
+                    <option value="Mirobod">Mirobod tumani</option>
+                    <option value="Mirzo Ulug'bek">Mirzo Ulug'bek tumani</option>
+                    <option value="Olmazor">Olmazor tumani</option>
+                    <option value="Sergeli">Sergeli tumani</option>
+                    <option value="Shayxontohur">Shayxontohur tumani</option>
+                    <option value="Uchtepa">Uchtepa tumani</option>
+                    <option value="Yakkasaroy">Yakkasaroy tumani</option>
+                    <option value="Yashnobod">Yashnobod tumani</option>
+                    <option value="Yunusobod">Yunusobod tumani</option>
+                    <option value="Yangihayot">Yangihayot tumani</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="address">Ko'cha va uy raqami *</label>
+                <input type="text" id="address" required placeholder="Masalan: Amir Temur ko'chasi, 25-uy">
+            </div>
+
+            <button type="submit">✅ Ro'yxatdan o'tish</button>
+
+            <div class="success-message" id="successMessage">
+                ✅ Muvaffaqiyatli ro'yxatdan o'tdingiz!
+            </div>
+        </form>
+    </div>
+
+
+
+
+
+
+
+
+    <script src="/bd.js"></script>
+</body>
+
+</html>
